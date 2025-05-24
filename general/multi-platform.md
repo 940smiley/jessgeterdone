@@ -16,6 +16,16 @@ A curated list of Android AI apps for managing multiple social media platforms s
 
 <script>
 (function() {
+  function renderAllAppsNoPaging(apps, containerId) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = '';
+    apps.forEach(function(app) {
+      if (typeof createAppCard === 'function') {
+        container.appendChild(createAppCard(app));
+      }
+    });
+  }
   function filterMultiPlatformApps(query) {
     var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
       return app.category === 'automation' || app.category === 'multi-platform';
@@ -27,13 +37,7 @@ A curated list of Android AI apps for managing multiple social media platforms s
           (app.features && app.features.some(function(f) { return f.toLowerCase().includes(query); }));
       });
     }
-    if (typeof renderApps === 'function') {
-      // Temporarily override appsPerPage to show all
-      var oldAppsPerPage = window.appsPerPage;
-      window.appsPerPage = 1000;
-      renderApps(apps, false, 'apps-container-multiplatform');
-      window.appsPerPage = oldAppsPerPage;
-    }
+    renderAllAppsNoPaging(apps, 'apps-container-multiplatform');
   }
   var input = document.getElementById('app-search-multiplatform');
   if (input) {
