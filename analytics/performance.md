@@ -2,6 +2,48 @@
 
 A curated list of Android AI apps for tracking social media performance, engagement metrics, and growth analytics.
 
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-analytics-performance" placeholder="Search performance analytics apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-analytics-performance">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-analytics-performance" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterAnalyticsPerformanceApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'analytics' || app.category === 'performance';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-analytics-performance');
+    }
+  }
+  var input = document.getElementById('app-search-analytics-performance');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterAnalyticsPerformanceApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-analytics-performance');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterAnalyticsPerformanceApps('');
+    });
+  }
+  filterAnalyticsPerformanceApps('');
+})();
+</script>
+
 <div class="cards-grid">
   <div class="card analytics-card performance">
     <div class="card-icon">

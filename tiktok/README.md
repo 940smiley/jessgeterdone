@@ -2,84 +2,47 @@
 
 A curated list of Android AI apps for TikTok content creation, automation, and growth.
 
-<div class="cards-grid">
-  <div class="card platform-card tiktok">
-    <div class="card-icon">
-      <i class="fas fa-video"></i>
-    </div>
-    <h3>CapCut</h3>
-    <p>TikTok's official video editor with AI-powered features including auto-captions, smart cut, and background removal.</p>
-    <div class="highlight-features">
-      <span class="feature">AI-Powered</span>
-      <span class="feature">Video</span>
-      <span class="feature">Automation</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.6</span>
-      <span><i class="fas fa-tag"></i> Free</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card tiktok">
-    <div class="card-icon">
-      <i class="fas fa-cut"></i>
-    </div>
-    <h3>InShot</h3>
-    <p>Professional video editor with AI enhancements, auto beat sync, and smart transitions.</p>
-    <div class="highlight-features">
-      <span class="feature">AI-Powered</span>
-      <span class="feature">Video</span>
-      <span class="feature">Editing</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.5</span>
-      <span><i class="fas fa-tag"></i> Freemium</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.camerasideas.instashot" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card tiktok">
-    <div class="card-icon">
-      <i class="fas fa-film"></i>
-    </div>
-    <h3>VLLO</h3>
-    <p>AI-assisted video editing with auto-subtitle generation, smart crop, and template-based editing.</p>
-    <div class="highlight-features">
-      <span class="feature">AI-Powered</span>
-      <span class="feature">Video</span>
-      <span class="feature">Editing</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.4</span>
-      <span><i class="fas fa-tag"></i> Freemium</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.darinsoft.vimo" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card tiktok">
-    <div class="card-icon">
-      <i class="fab fa-tiktok"></i>
-    </div>
-    <h3>TikTok Studio</h3>
-    <p>TikTok's creator studio for managing content, analyzing performance, and accessing creator tools.</p>
-    <div class="highlight-features">
-      <span class="feature">Analytics</span>
-      <span class="feature">Video</span>
-      <span class="feature">Automation</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.4</span>
-      <span><i class="fas fa-tag"></i> Free</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.creator" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-tiktok" placeholder="Search TikTok apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-tiktok">
+      <i class="fas fa-times"></i>
+    </button>
   </div>
 </div>
+<div id="apps-container-tiktok" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterTikTokApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'tiktok';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-tiktok');
+    }
+  }
+  var input = document.getElementById('app-search-tiktok');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterTikTokApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-tiktok');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterTikTokApps('');
+    });
+  }
+  filterTikTokApps('');
+})();
+</script>
 
 ## 📝 Caption & Hashtag Tools
 

@@ -2,6 +2,48 @@
 
 A curated list of Android AI apps for photo editing, image enhancement, and graphic design.
 
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-image-editors" placeholder="Search image editor apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-image-editors">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-image-editors" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterImageEditorApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'content' || app.category === 'image-editors';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-image-editors');
+    }
+  }
+  var input = document.getElementById('app-search-image-editors');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterImageEditorApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-image-editors');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterImageEditorApps('');
+    });
+  }
+  filterImageEditorApps('');
+})();
+</script>
+
 <div class="cards-grid">
   <div class="card content-card image">
     <div class="card-icon">

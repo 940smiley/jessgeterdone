@@ -1,6 +1,48 @@
-# Text & Caption Generators ✍️
+# Text & Caption Generators 📝
 
-A curated list of Android AI apps for automated text creation, caption generation, and copywriting.
+A curated list of Android AI apps for text generation, caption writing, and content creation.
+
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-text-generators" placeholder="Search text generator apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-text-generators">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-text-generators" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterTextGeneratorApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'content' || app.category === 'text-generators';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-text-generators');
+    }
+  }
+  var input = document.getElementById('app-search-text-generators');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterTextGeneratorApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-text-generators');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterTextGeneratorApps('');
+    });
+  }
+  filterTextGeneratorApps('');
+})();
+</script>
 
 ## 🤖 AI Writing Assistants
 

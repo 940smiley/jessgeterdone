@@ -375,3 +375,49 @@ A curated list of Android AI apps for automating social media workflows, streaml
 ---
 
 *Last updated: 2025-05-24*
+
+# Workflow Automation Tools ⚙️
+
+A curated list of Android AI apps for workflow automation, process optimization, and productivity.
+
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-workflows" placeholder="Search workflow apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-workflows">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-workflows" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterWorkflowApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'automation' || app.category === 'workflows';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-workflows');
+    }
+  }
+  var input = document.getElementById('app-search-workflows');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterWorkflowApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-workflows');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterWorkflowApps('');
+    });
+  }
+  filterWorkflowApps('');
+})();
+</script>

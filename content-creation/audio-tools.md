@@ -2,6 +2,48 @@
 
 A curated list of Android AI apps for voice generation, audio editing, and music creation.
 
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-audio-tools" placeholder="Search audio tool apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-audio-tools">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-audio-tools" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterAudioToolApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'content' || app.category === 'audio-tools';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-audio-tools');
+    }
+  }
+  var input = document.getElementById('app-search-audio-tools');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterAudioToolApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-audio-tools');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterAudioToolApps('');
+    });
+  }
+  filterAudioToolApps('');
+})();
+</script>
+
 ## 🎤 AI Voice Generation
 
 ### Text-to-Speech (TTS)

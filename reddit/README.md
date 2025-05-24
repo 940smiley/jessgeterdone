@@ -2,65 +2,49 @@
 
 A curated list of Android AI apps for Reddit content creation, automation, and community management.
 
-<div class="cards-grid">
-  <div class="card platform-card reddit">
-    <div class="card-icon">
-      <i class="fab fa-reddit"></i>
-    </div>
-    <h3>Boost for Reddit</h3>
-    <p>Feature-rich Reddit client with advanced filtering, customizable interface, and offline reading.</p>
-    <div class="highlight-features">
-      <span class="feature">Automation</span>
-      <span class="feature">Analytics</span>
-      <span class="feature">Social</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.7</span>
-      <span><i class="fas fa-tag"></i> Freemium</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card reddit">
-    <div class="card-icon">
-      <i class="fas fa-rocket"></i>
-    </div>
-    <h3>Apollo for Reddit</h3>
-    <p>Premium Reddit client with gesture navigation, media optimization, and advanced customization.</p>
-    <div class="highlight-features">
-      <span class="feature">Automation</span>
-      <span class="feature">Social</span>
-      <span class="feature">Analytics</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.5</span>
-      <span><i class="fas fa-tag"></i> Freemium</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.laurencedawson.reddit_sync" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card reddit">
-    <div class="card-icon">
-      <i class="fab fa-reddit-alien"></i>
-    </div>
-    <h3>Reddit Enhancement Suite</h3>
-    <p>Enhanced Reddit browsing with advanced features, custom filters, and productivity tools.</p>
-    <div class="highlight-features">
-      <span class="feature">Automation</span>
-      <span class="feature">Analytics</span>
-      <span class="feature">Social</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.3</span>
-      <span><i class="fas fa-tag"></i> Free</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.andrewshu.android.reddit" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-reddit" placeholder="Search Reddit apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-reddit">
+      <i class="fas fa-times"></i>
+    </button>
   </div>
 </div>
+<div id="apps-container-reddit" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterRedditApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'reddit';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-reddit');
+    }
+  }
+  var input = document.getElementById('app-search-reddit');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterRedditApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-reddit');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterRedditApps('');
+    });
+  }
+  filterRedditApps('');
+})();
+</script>
+
+---
 
 ## 🤖 Content Creation & Writing
 

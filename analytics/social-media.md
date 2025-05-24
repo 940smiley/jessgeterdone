@@ -1,6 +1,48 @@
 # Social Media Analytics 📊
 
-A curated list of Android AI apps for social media analytics, performance tracking, and audience insights.
+A curated list of Android AI apps for social media analytics, insights, and reporting.
+
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-analytics-social-media" placeholder="Search analytics apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-analytics-social-media">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-analytics-social-media" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterAnalyticsSocialMediaApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'analytics' || app.category === 'social-media';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-analytics-social-media');
+    }
+  }
+  var input = document.getElementById('app-search-analytics-social-media');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterAnalyticsSocialMediaApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-analytics-social-media');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterAnalyticsSocialMediaApps('');
+    });
+  }
+  filterAnalyticsSocialMediaApps('');
+})();
+</script>
 
 ## 📈 Multi-Platform Analytics
 

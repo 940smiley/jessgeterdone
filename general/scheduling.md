@@ -2,6 +2,48 @@
 
 A curated list of Android AI apps for content scheduling, calendar management, and strategic planning across social media platforms.
 
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-scheduling" placeholder="Search scheduling apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-scheduling">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-scheduling" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterSchedulingApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'automation' || app.category === 'scheduling';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-scheduling');
+    }
+  }
+  var input = document.getElementById('app-search-scheduling');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterSchedulingApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-scheduling');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterSchedulingApps('');
+    });
+  }
+  filterSchedulingApps('');
+})();
+</script>
+
 <div class="cards-grid">
   <div class="card automation-card scheduling">
     <div class="card-icon">

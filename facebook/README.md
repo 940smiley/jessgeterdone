@@ -2,65 +2,49 @@
 
 A curated list of Android AI apps for Facebook content creation, marketing automation, and business growth.
 
-<div class="cards-grid">
-  <div class="card platform-card facebook">
-    <div class="card-icon">
-      <i class="fab fa-facebook"></i>
-    </div>
-    <h3>Facebook Business Suite</h3>
-    <p>Meta's unified business management for Facebook and Instagram with post scheduling and analytics.</p>
-    <div class="highlight-features">
-      <span class="feature">Automation</span>
-      <span class="feature">Analytics</span>
-      <span class="feature">Scheduling</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.2</span>
-      <span><i class="fas fa-tag"></i> Free</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.facebook.pages.app" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card facebook">
-    <div class="card-icon">
-      <i class="fas fa-bullhorn"></i>
-    </div>
-    <h3>Facebook Ads Manager</h3>
-    <p>Create, manage, and track Facebook and Instagram ad campaigns with detailed analytics and targeting.</p>
-    <div class="highlight-features">
-      <span class="feature">Automation</span>
-      <span class="feature">Analytics</span>
-      <span class="feature">Advertising</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.0</span>
-      <span><i class="fas fa-tag"></i> Free</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.facebook.adsmanager" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
-  </div>
-  <div class="card platform-card facebook">
-    <div class="card-icon">
-      <i class="fas fa-video-plus"></i>
-    </div>
-    <h3>Creator Studio</h3>
-    <p>Meta's content management for Facebook and Instagram creators with publishing and analytics tools.</p>
-    <div class="highlight-features">
-      <span class="feature">Automation</span>
-      <span class="feature">Analytics</span>
-      <span class="feature">Scheduling</span>
-    </div>
-    <div class="card-stats">
-      <span><i class="fas fa-star"></i> 4.1</span>
-      <span><i class="fas fa-tag"></i> Free</span>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.facebook.creatorapp" target="_blank" class="card-button">
-      <i class="fab fa-google-play"></i> Download
-    </a>
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-facebook" placeholder="Search Facebook apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-facebook">
+      <i class="fas fa-times"></i>
+    </button>
   </div>
 </div>
+<div id="apps-container-facebook" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterFacebookApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'facebook';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-facebook');
+    }
+  }
+  var input = document.getElementById('app-search-facebook');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterFacebookApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-facebook');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterFacebookApps('');
+    });
+  }
+  filterFacebookApps('');
+})();
+</script>
+
+---
 
 ## 🎨 Content Creation
 

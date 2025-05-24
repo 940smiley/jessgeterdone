@@ -1,6 +1,48 @@
 # Audience Analysis 👥
 
-A curated list of Android AI apps for understanding your audience, demographics, and user behavior across social media platforms.
+A curated list of Android AI apps for audience analytics, segmentation, and insights.
+
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-analytics-audience" placeholder="Search audience analytics apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-analytics-audience">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<div id="apps-container-analytics-audience" class="interactive-apps-grid"></div>
+<script>
+(function() {
+  function filterAnalyticsAudienceApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
+      return app.category === 'analytics' || app.category === 'audience';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) || (app.description && app.description.toLowerCase().includes(query));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      renderApps(apps, false, 'apps-container-analytics-audience');
+    }
+  }
+  var input = document.getElementById('app-search-analytics-audience');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterAnalyticsAudienceApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-analytics-audience');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterAnalyticsAudienceApps('');
+    });
+  }
+  filterAnalyticsAudienceApps('');
+})();
+</script>
 
 ## 👤 Demographic Analysis
 
