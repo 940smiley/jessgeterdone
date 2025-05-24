@@ -2,6 +2,28 @@
 
 A curated list of Android AI apps for tracking social media performance, engagement metrics, and growth analytics.
 
+<div class="cards-grid">
+  <div class="card analytics-card performance">
+    <div class="card-icon">
+      <i class="fas fa-seedling"></i>
+    </div>
+    <h3>Sprout Social</h3>
+    <p>Enterprise social media management with advanced analytics, team collaboration, and CRM integration.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Analytics</span>
+      <span class="feature">Scheduling</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.4</span>
+      <span><i class="fas fa-tag"></i> Paid</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.sproutsocial.android" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+</div>
+
 ## 🎯 Key Performance Indicators (KPIs)
 
 ### Engagement Metrics

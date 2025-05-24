@@ -2,6 +2,66 @@
 
 A curated list of Android AI apps for Snapchat content creation, automation, and enhancement.
 
+<div class="cards-grid">
+  <div class="card platform-card snapchat">
+    <div class="card-icon">
+      <i class="fas fa-user-edit"></i>
+    </div>
+    <h3>FaceApp</h3>
+    <p>AI-powered photo editor with age progression, gender swap filters, and hair color changes.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Image</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.3</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=io.faceapp" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card snapchat">
+    <div class="card-icon">
+      <i class="fas fa-theater-masks"></i>
+    </div>
+    <h3>Reface AI</h3>
+    <p>AI face swap app for videos and GIFs with celebrity faces and custom animations.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Video</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.0</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.neocortext.reface" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card snapchat">
+    <div class="card-icon">
+      <i class="fas fa-sparkles"></i>
+    </div>
+    <h3>Lensa AI</h3>
+    <p>AI-powered photo editor with magic avatars, background replacement, and face enhancement features.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Image</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.1</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.lensa.app" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+</div>
+
 ## 📸 Content Creation
 
 ### Photo & Video Enhancement
@@ -11,20 +71,6 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Real-time effects
   - Free with premium lenses
   - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.snapchat.android)
-
-- **FaceApp** - AI-powered photo editor
-  - Age progression/regression
-  - Gender swap filters
-  - Hair color and style changes
-  - Rating: 4.3/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=io.faceapp)
-
-- **Reface** - AI face swap app
-  - Video face replacement
-  - GIF creation with your face
-  - Celebrity face swaps
-  - Rating: 4.2/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.neocortext.reface)
 
 ### AR Filters & Effects
 - **Lens Studio** - Create custom Snapchat lenses

@@ -2,44 +2,103 @@
 
 A curated list of Android AI apps for managing multiple social media platforms simultaneously.
 
-## 🔗 Unified Social Media Management
-
-### Comprehensive Platforms
-- **Hootsuite** - Industry-leading social management
-  - 35+ social network integrations
-  - Team collaboration features
-  - Advanced analytics dashboard
-  - Rating: 4.2/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.hootsuite.droid)
-
-- **Buffer** - User-friendly social scheduler
-  - Clean, intuitive interface
-  - Pablo image creation tool
-  - Browser extension support
-  - Rating: 4.3/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=org.buffer.android)
-
-- **Sprout Social** - Enterprise social management
-  - Smart inbox for messages
-  - CRM integration capabilities
-  - Advanced reporting features
-  - Rating: 4.4/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.sproutsocial.android)
-
-### All-in-One Solutions
-- **Later** - Visual content scheduler
-  - Instagram-first design
-  - Visual content calendar
-  - Linkin.bio tool included
-  - Rating: 4.4/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=me.latergram.latergramme)
-
-- **SocialBee** - Content categorization focus
-  - Content category organization
-  - Evergreen content recycling
-  - RSS feed automation
-  - Rating: 4.2/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.socialbee.app)
+<div class="cards-grid">
+  <div class="card automation-card multiplatform">
+    <div class="card-icon">
+      <i class="fas fa-share-alt"></i>
+    </div>
+    <h3>Hootsuite</h3>
+    <p>Industry-leading social media management with 35+ platform integrations and advanced analytics.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Analytics</span>
+      <span class="feature">Scheduling</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.2</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.hootsuite.droid" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card automation-card multiplatform">
+    <div class="card-icon">
+      <i class="fas fa-calendar-alt"></i>
+    </div>
+    <h3>Buffer</h3>
+    <p>User-friendly social media scheduler with clean interface and Pablo image creation tool.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Scheduling</span>
+      <span class="feature">Analytics</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.3</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=org.buffer.android" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card automation-card multiplatform">
+    <div class="card-icon">
+      <i class="fas fa-seedling"></i>
+    </div>
+    <h3>Sprout Social</h3>
+    <p>Enterprise social media management with advanced analytics, team collaboration, and CRM integration.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Analytics</span>
+      <span class="feature">Scheduling</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.4</span>
+      <span><i class="fas fa-tag"></i> Paid</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.sproutsocial.android" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card automation-card multiplatform">
+    <div class="card-icon">
+      <i class="fas fa-clock"></i>
+    </div>
+    <h3>Later</h3>
+    <p>Visual content scheduler with Instagram-first design, drag-and-drop calendar, and Linkin.bio tool.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Scheduling</span>
+      <span class="feature">Analytics</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.4</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=me.latergram.latergramme" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card automation-card multiplatform">
+    <div class="card-icon">
+      <i class="fas fa-bee"></i>
+    </div>
+    <h3>SocialBee</h3>
+    <p>Social media management with content categorization, evergreen recycling, and RSS automation.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Scheduling</span>
+      <span class="feature">Analytics</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.2</span>
+      <span><i class="fas fa-tag"></i> Paid</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.socialbee.app" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+</div>
 
 ## 📱 Mobile-First Multi-Platform Apps
 

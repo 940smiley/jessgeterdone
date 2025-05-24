@@ -2,49 +2,84 @@
 
 A curated list of Android AI apps for photo editing, image enhancement, and graphic design.
 
-## 🤖 AI-Powered Photo Editors
-
-### Professional AI Editing
-- **Adobe Photoshop** - Industry-standard editor
-  - AI-powered selection tools
-  - Neural filters and effects
-  - Cloud synchronization
-  - Rating: 4.5/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.adobe.photoshopmix)
-
-- **Luminar AI** - AI-first photo editor
-  - One-click sky replacement
-  - AI skin enhancement
-  - Portrait bokeh effects
-  - Rating: 4.4/5 ⭐
-
-- **Skylum** - Creative photo editing
-  - AI structure and enhance
-  - Automatic color correction
-  - Creative filters
-  - Rating: 4.3/5 ⭐
-
-### Mobile AI Editors
-- **VSCO** - Creative photo editing
-  - AI-powered presets
-  - Advanced editing tools
-  - Community features
-  - Rating: 4.6/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.vsco.cam)
-
-- **Snapseed** - Google's photo editor
-  - Professional editing tools
-  - Selective adjustments
-  - RAW file support
-  - Rating: 4.7/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.niksoftware.snapseed)
-
-- **PicsArt** - Social photo editor
-  - AI effects and filters
-  - Collage creation
-  - Drawing tools
-  - Rating: 4.4/5 ⭐
-  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.picsart.studio)
+<div class="cards-grid">
+  <div class="card content-card image">
+    <div class="card-icon">
+      <i class="fas fa-camera"></i>
+    </div>
+    <h3>VSCO</h3>
+    <p>Creative photo editing with AI-powered presets, advanced editing tools, and community features.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Image</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.6</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.vsco.cam" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card content-card image">
+    <div class="card-icon">
+      <i class="fas fa-palette"></i>
+    </div>
+    <h3>Canva</h3>
+    <p>Design platform with social media templates, brand kit integration, and AI-powered design suggestions.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Image</span>
+      <span class="feature">Automation</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.6</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.canva.editor" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card content-card image">
+    <div class="card-icon">
+      <i class="fas fa-user-edit"></i>
+    </div>
+    <h3>FaceApp</h3>
+    <p>AI-powered photo editor with age progression, gender swap filters, and hair color changes.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Image</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.3</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=io.faceapp" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card content-card image">
+    <div class="card-icon">
+      <i class="fas fa-sparkles"></i>
+    </div>
+    <h3>Lensa AI</h3>
+    <p>AI-powered photo editor with magic avatars, background replacement, and face enhancement features.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Image</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.1</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.lensa.app" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+</div>
 
 ## 🎨 AI Image Generation
 

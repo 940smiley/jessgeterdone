@@ -2,39 +2,84 @@
 
 A curated list of Android AI apps for TikTok content creation, automation, and growth.
 
-## 🎬 Content Creation
-
-### Video Editing & Effects
-- **CapCut** - TikTok's official video editor with AI-powered features
-  - Auto-captions, smart cut, background removal
-  - Templates and trending effects
-  - Free with premium features
-  - Rating: 4.6/5 ⭐
-
-- **InShot** - Professional video editor with AI enhancements
-  - Auto beat sync, smart transitions
-  - AI-powered filters and effects
-  - Music and sound effect library
-  - Rating: 4.5/5 ⭐
-
-- **VLLO** - AI-assisted video editing
-  - Auto-subtitle generation
-  - Smart crop for different aspect ratios
-  - Template-based editing
-  - Rating: 4.4/5 ⭐
-
-### AI Content Generators
-- **Luma Dream Machine** - AI video generation
-  - Text-to-video creation
-  - Image-to-video animation
-  - High-quality output for TikTok
-  - Rating: 4.3/5 ⭐
-
-- **RunwayML** - Creative AI tools
-  - AI video effects and transitions
-  - Background replacement
-  - Motion tracking
-  - Rating: 4.2/5 ⭐
+<div class="cards-grid">
+  <div class="card platform-card tiktok">
+    <div class="card-icon">
+      <i class="fas fa-video"></i>
+    </div>
+    <h3>CapCut</h3>
+    <p>TikTok's official video editor with AI-powered features including auto-captions, smart cut, and background removal.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Video</span>
+      <span class="feature">Automation</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.6</span>
+      <span><i class="fas fa-tag"></i> Free</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card tiktok">
+    <div class="card-icon">
+      <i class="fas fa-cut"></i>
+    </div>
+    <h3>InShot</h3>
+    <p>Professional video editor with AI enhancements, auto beat sync, and smart transitions.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Video</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.5</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.camerasideas.instashot" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card tiktok">
+    <div class="card-icon">
+      <i class="fas fa-film"></i>
+    </div>
+    <h3>VLLO</h3>
+    <p>AI-assisted video editing with auto-subtitle generation, smart crop, and template-based editing.</p>
+    <div class="highlight-features">
+      <span class="feature">AI-Powered</span>
+      <span class="feature">Video</span>
+      <span class="feature">Editing</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.4</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.darinsoft.vimo" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card tiktok">
+    <div class="card-icon">
+      <i class="fab fa-tiktok"></i>
+    </div>
+    <h3>TikTok Studio</h3>
+    <p>TikTok's creator studio for managing content, analyzing performance, and accessing creator tools.</p>
+    <div class="highlight-features">
+      <span class="feature">Analytics</span>
+      <span class="feature">Video</span>
+      <span class="feature">Automation</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.4</span>
+      <span><i class="fas fa-tag"></i> Free</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.creator" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+</div>
 
 ## 📝 Caption & Hashtag Tools
 

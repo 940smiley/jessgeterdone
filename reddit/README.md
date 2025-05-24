@@ -2,33 +2,65 @@
 
 A curated list of Android AI apps for Reddit content creation, automation, and community management.
 
-## 📱 Reddit Client Apps
-
-### Enhanced Reddit Clients
-- **Boost for Reddit** - Feature-rich Reddit client
-  - Advanced filtering and sorting
-  - Customizable interface
-  - Offline reading capabilities
-  - Rating: 4.7/5 ⭐
-
-- **Sync for Reddit** - Modern Reddit experience
-  - Material design interface
-  - Advanced comment navigation
-  - Media optimization
-  - Rating: 4.6/5 ⭐
-
-- **RIF (Reddit is Fun)** - Lightweight client
-  - Fast loading and browsing
-  - Minimal data usage
-  - Clean, simple interface
-  - Rating: 4.5/5 ⭐
-
-### AI-Enhanced Clients
-- **Apollo** - iOS-inspired Reddit client
-  - Smart content filtering
-  - Advanced search capabilities
-  - GIF and video optimization
-  - Rating: 4.4/5 ⭐
+<div class="cards-grid">
+  <div class="card platform-card reddit">
+    <div class="card-icon">
+      <i class="fab fa-reddit"></i>
+    </div>
+    <h3>Boost for Reddit</h3>
+    <p>Feature-rich Reddit client with advanced filtering, customizable interface, and offline reading.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Analytics</span>
+      <span class="feature">Social</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.7</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card reddit">
+    <div class="card-icon">
+      <i class="fas fa-rocket"></i>
+    </div>
+    <h3>Apollo for Reddit</h3>
+    <p>Premium Reddit client with gesture navigation, media optimization, and advanced customization.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Social</span>
+      <span class="feature">Analytics</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.5</span>
+      <span><i class="fas fa-tag"></i> Freemium</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.laurencedawson.reddit_sync" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+  <div class="card platform-card reddit">
+    <div class="card-icon">
+      <i class="fab fa-reddit-alien"></i>
+    </div>
+    <h3>Reddit Enhancement Suite</h3>
+    <p>Enhanced Reddit browsing with advanced features, custom filters, and productivity tools.</p>
+    <div class="highlight-features">
+      <span class="feature">Automation</span>
+      <span class="feature">Analytics</span>
+      <span class="feature">Social</span>
+    </div>
+    <div class="card-stats">
+      <span><i class="fas fa-star"></i> 4.3</span>
+      <span><i class="fas fa-tag"></i> Free</span>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.andrewshu.android.reddit" target="_blank" class="card-button">
+      <i class="fab fa-google-play"></i> Download
+    </a>
+  </div>
+</div>
 
 ## 🤖 Content Creation & Writing
 
