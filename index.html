@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JessGeterDone - Android AI Automation Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>JessGeterDone</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#app-explorer">Explore Apps</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
+                    <li><a href="#content">Content Creation</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#automation">Automation</a></li>
+                </ul>
+                <div class="mobile-menu" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Android AI Automation Apps</h1>
+                <p class="hero-subtitle">Curated lists of awesome Android AI apps for social media automation, content creation, and digital marketing</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Apps Listed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4000+</span>
+                        <span class="stat-label">Lines of Content</span>
+                    </div>
+                </div>
+                <a href="#app-explorer" class="cta-button">
+                    <i class="fas fa-rocket"></i>
+                    Explore Apps
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Interactive App Explorer Section -->
+        <section id="app-explorer" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-search"></i>
+                    Explore Apps Interactively
+                </h2>
+                <p class="section-subtitle">Search, filter, and discover the perfect Android AI apps for your needs</p>
+                
+                <!-- Search and Filter Bar -->
+                <div class="search-filter-bar">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="app-search" placeholder="Search apps by name, features, or description...">
+                        <button class="clear-search" id="clear-search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="filters">
+                        <select id="platform-filter">
+                            <option value="">All Platforms</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="snapchat">Snapchat</option>
+                            <option value="reddit">Reddit</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="content">Content Creation</option>
+                            <option value="analytics">Analytics</option>
+                            <option value="automation">Automation</option>
+                        </select>
+                        
+                        <select id="rating-filter">
+                            <option value="">All Ratings</option>
+                            <option value="4.5">4.5+ Stars</option>
+                            <option value="4.0">4.0+ Stars</option>
+                            <option value="3.5">3.5+ Stars</option>
+                        </select>
+                        
+                        <select id="price-filter">
+                            <option value="">All Prices</option>
+                            <option value="free">Free</option>
+                            <option value="freemium">Freemium</option>
+                            <option value="paid">Paid</option>
+                        </select>
+                        
+                        <button class="filter-toggle" id="advanced-filters">
+                            <i class="fas fa-sliders-h"></i>
+                            Advanced
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Advanced Filters Panel -->
+                <div class="advanced-filters-panel" id="advanced-panel">
+                    <div class="filter-group">
+                        <h4>Features</h4>
+                        <div class="feature-tags">
+                            <button class="feature-tag" data-feature="ai">AI-Powered</button>
+                            <button class="feature-tag" data-feature="automation">Automation</button>
+                            <button class="feature-tag" data-feature="analytics">Analytics</button>
+                            <button class="feature-tag" data-feature="video">Video Editing</button>
+                            <button class="feature-tag" data-feature="image">Image Editing</button>
+                            <button class="feature-tag" data-feature="text">Text Generation</button>
+                            <button class="feature-tag" data-feature="audio">Audio Tools</button>
+                            <button class="feature-tag" data-feature="scheduling">Scheduling</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Sort By</h4>
+                        <select id="sort-by">
+                            <option value="name">App Name</option>
+                            <option value="rating">Rating</option>
+                            <option value="category">Category</option>
+                            <option value="featured">Featured</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Results Counter -->
+                <div class="results-info">
+                    <span id="results-count">Showing all apps</span>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Interactive App Grid -->
+                <div class="interactive-apps-grid" id="apps-container">
+                    <!-- Apps will be dynamically loaded here -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more">
+                        <i class="fas fa-plus"></i>
+                        Load More Apps
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Platforms Section -->
+        <section id="platforms" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-mobile-alt"></i>
+                    Social Media Platforms
+                </h2>
+                <p class="section-subtitle">Platform-specific automation and content creation tools</p>
+                
+                <div class="cards-grid">
+                    <div class="card platform-card tiktok">
+                        <div class="card-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <h3>TikTok Tools</h3>
+                        <p>Video editing, AI effects, content creation, and growth analytics for TikTok automation</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-video"></i> Video Editing</span>
+                            <span><i class="fas fa-hashtag"></i> Hashtag Tools</span>
+                            <span><i class="fas fa-chart-line"></i> Analytics</span>
+                        </div>
+                        <a href="tiktok/" class="card-button">
+                            Explore TikTok Apps
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="card platform-card snapchat">
+                        <div class="card-icon">
+                            <i class="fab fa-snapchat-ghost"></i>
+                        </div>
+                        <h3>Snapchat Utilities</h3>
+                        <p>AR filters, face effects, story enhancement, and creative tools for Snapchat content</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-magic"></i> AR Filters</span>
+                            <span><i class="fas fa-camera"></i> Photo Effects</span>
+                            <span><i class="fas fa-palette"></i> Creative Tools</span>
+                        </div>
+                        <a href="snapchat/" class="card-button">
+                            Explore Snapchat Apps
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="card platform-card reddit">
+                        <div class="card-icon">
+                            <i class="fab fa-reddit"></i>
+                        </div>
+                        <h3>Reddit Automation</h3>
+                        <p>Community management, content creation, analytics, and moderation tools for Reddit</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> Community Mgmt</span>
+                            <span><i class="fas fa-robot"></i> Auto-Moderation</span>
+                            <span><i class="fas fa-search"></i> Research Tools</span>
+                        </div>
+                        <a href="reddit/" class="card-button">
+                            Explore Reddit Apps
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="card platform-card facebook">
+                        <div class="card-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <h3>Facebook Marketing</h3>
+                        <p>Business tools, advertising automation, page management, and marketing optimization</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-bullhorn"></i> Advertising</span>
+                            <span><i class="fas fa-store"></i> E-commerce</span>
+                            <span><i class="fas fa-chart-bar"></i> Analytics</span>
+                        </div>
+                        <a href="facebook/" class="card-button">
+                            Explore Facebook Apps
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Creation Section -->
+        <section id="content" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-paint-brush"></i>
+                    Content Creation
+                </h2>
+                <p class="section-subtitle">AI-powered tools for creating engaging multimedia content</p>
+                
+                <div class="cards-grid">
+                    <div class="card content-card video">
+                        <div class="card-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Generators</h3>
+                        <p>AI video creation, text-to-video, animation tools, and professional video editing apps</p>
+                        <div class="highlight-features">
+                            <span class="feature">Text-to-Video AI</span>
+                            <span class="feature">Animation Tools</span>
+                            <span class="feature">Video Enhancement</span>
+                        </div>
+                        <a href="content-creation/video-generators.md" class="card-button">
+                            View Video Tools
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+
+                    <div class="card content-card image">
+                        <div class="card-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Image Editors</h3>
+                        <p>AI photo editing, image generation, background removal, and graphic design tools</p>
+                        <div class="highlight-features">
+                            <span class="feature">AI Enhancement</span>
+                            <span class="feature">Background Removal</span>
+                            <span class="feature">Style Transfer</span>
+                        </div>
+                        <a href="content-creation/image-editors.md" class="card-button">
+                            View Image Tools
+                            <i class="fas fa-images"></i>
+                        </a>
+                    </div>
+
+                    <div class="card content-card text">
+                        <div class="card-icon">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        <h3>Text Generators</h3>
+                        <p>AI writing assistants, caption generators, copywriting tools, and content optimization</p>
+                        <div class="highlight-features">
+                            <span class="feature">AI Writing</span>
+                            <span class="feature">Caption Generation</span>
+                            <span class="feature">Copywriting</span>
+                        </div>
+                        <a href="content-creation/text-generators.md" class="card-button">
+                            View Text Tools
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </div>
+
+                    <div class="card content-card audio">
+                        <div class="card-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Audio Tools</h3>
+                        <p>Voice generation, AI music creation, audio editing, and podcast production tools</p>
+                        <div class="highlight-features">
+                            <span class="feature">Voice Synthesis</span>
+                            <span class="feature">AI Music</span>
+                            <span class="feature">Audio Enhancement</span>
+                        </div>
+                        <a href="content-creation/audio-tools.md" class="card-button">
+                            View Audio Tools
+                            <i class="fas fa-music"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-line"></i>
+                    Analytics & Insights
+                </h2>
+                <p class="section-subtitle">Data-driven tools for tracking performance and understanding your audience</p>
+                
+                <div class="cards-grid">
+                    <div class="card analytics-card social">
+                        <div class="card-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Social Media Analytics</h3>
+                        <p>Cross-platform insights, social listening, trend analysis, and comprehensive reporting tools</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Multi-platform dashboards</li>
+                            <li><i class="fas fa-check"></i> AI-powered insights</li>
+                            <li><i class="fas fa-check"></i> Social listening</li>
+                        </ul>
+                        <a href="analytics/social-media.md" class="card-button">
+                            View Analytics Tools
+                            <i class="fas fa-chart-bar"></i>
+                        </a>
+                    </div>
+
+                    <div class="card analytics-card performance">
+                        <div class="card-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance Tracking</h3>
+                        <p>KPI monitoring, growth analytics, ROI tracking, and performance optimization tools</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Growth tracking</li>
+                            <li><i class="fas fa-check"></i> ROI measurement</li>
+                            <li><i class="fas fa-check"></i> A/B testing</li>
+                        </ul>
+                        <a href="analytics/performance.md" class="card-button">
+                            View Performance Tools
+                            <i class="fas fa-rocket"></i>
+                        </a>
+                    </div>
+
+                    <div class="card analytics-card audience">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Audience Analysis</h3>
+                        <p>Demographics, behavior analysis, audience segmentation, and user journey mapping</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Demographic insights</li>
+                            <li><i class="fas fa-check"></i> Behavior analysis</li>
+                            <li><i class="fas fa-check"></i> Audience segmentation</li>
+                        </ul>
+                        <a href="analytics/audience.md" class="card-button">
+                            View Audience Tools
+                            <i class="fas fa-user-friends"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Automation Section -->
+        <section id="automation" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-cogs"></i>
+                    General Automation
+                </h2>
+                <p class="section-subtitle">Streamline your workflow with powerful automation and management tools</p>
+                
+                <div class="cards-grid">
+                    <div class="card automation-card multiplatform">
+                        <div class="card-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Multi-Platform Tools</h3>
+                        <p>Unified management, cross-platform publishing, and comprehensive social media suites</p>
+                        <div class="automation-features">
+                            <span><i class="fas fa-sync"></i> Unified Management</span>
+                            <span><i class="fas fa-broadcast-tower"></i> Cross-Platform Publishing</span>
+                        </div>
+                        <a href="general/multi-platform.md" class="card-button">
+                            Explore Multi-Platform
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="card automation-card scheduling">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Scheduling & Planning</h3>
+                        <p>Content calendars, automated posting, optimal timing, and strategic planning tools</p>
+                        <div class="automation-features">
+                            <span><i class="fas fa-clock"></i> Smart Scheduling</span>
+                            <span><i class="fas fa-calendar-check"></i> Content Planning</span>
+                        </div>
+                        <a href="general/scheduling.md" class="card-button">
+                            View Scheduling Tools
+                            <i class="fas fa-calendar"></i>
+                        </a>
+                    </div>
+
+                    <div class="card automation-card workflows">
+                        <div class="card-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Workflow Automation</h3>
+                        <p>Process automation, workflow builders, task automation, and productivity optimization</p>
+                        <div class="automation-features">
+                            <span><i class="fas fa-robot"></i> Process Automation</span>
+                            <span><i class="fas fa-tasks"></i> Workflow Building</span>
+                        </div>
+                        <a href="general/workflows.md" class="card-button">
+                            Explore Workflows
+                            <i class="fas fa-flow-chart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Curated Lists?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Legitimate Tools Only</h3>
+                        <p>All apps are carefully vetted for authenticity, safety, and compliance with platform guidelines</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Quality Ratings</h3>
+                        <p>Each app includes user ratings, detailed descriptions, and honest assessments of capabilities</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Android Focused</h3>
+                        <p>Specifically curated for Android users with mobile-optimized apps and tools</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Regularly Updated</h3>
+                        <p>Content is continuously updated with new apps, features, and best practices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>JessGeterDone</span>
+                    </div>
+                    <p>Curated Android AI automation apps for social media success</p>
+                    <div class="social-links">
+                        <a href="https://github.com/940smiley/jessgeterdone" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Platforms</h4>
+                        <a href="tiktok/">TikTok</a>
+                        <a href="snapchat/">Snapchat</a>
+                        <a href="reddit/">Reddit</a>
+                        <a href="facebook/">Facebook</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Content</h4>
+                        <a href="content-creation/video-generators.md">Video</a>
+                        <a href="content-creation/image-editors.md">Images</a>
+                        <a href="content-creation/text-generators.md">Text</a>
+                        <a href="content-creation/audio-tools.md">Audio</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Analytics</h4>
+                        <a href="analytics/social-media.md">Social Media</a>
+                        <a href="analytics/performance.md">Performance</a>
+                        <a href="analytics/audience.md">Audience</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JessGeterDone. Open source project for the community.</p>
+                <p>Last updated: May 24, 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
