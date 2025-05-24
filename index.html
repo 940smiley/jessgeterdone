@@ -39,8 +39,8 @@
                         <span class="stat-label">Categories</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">200+</span>
-                        <span class="stat-label">Apps Listed</span>
+                        <span class="stat-number">24+</span>
+                        <span class="stat-label">Interactive Apps</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">4000+</span>
@@ -184,7 +184,7 @@
                             <span><i class="fas fa-hashtag"></i> Hashtag Tools</span>
                             <span><i class="fas fa-chart-line"></i> Analytics</span>
                         </div>
-                        <a href="tiktok/" class="card-button">
+                        <a href="#app-explorer?category=tiktok" class="card-button" onclick="filterByCategory('tiktok')">
                             Explore TikTok Apps
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -201,7 +201,7 @@
                             <span><i class="fas fa-camera"></i> Photo Effects</span>
                             <span><i class="fas fa-palette"></i> Creative Tools</span>
                         </div>
-                        <a href="snapchat/" class="card-button">
+                        <a href="#app-explorer?category=snapchat" class="card-button" onclick="filterByCategory('snapchat')">
                             Explore Snapchat Apps
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -218,7 +218,7 @@
                             <span><i class="fas fa-robot"></i> Auto-Moderation</span>
                             <span><i class="fas fa-search"></i> Research Tools</span>
                         </div>
-                        <a href="reddit/" class="card-button">
+                        <a href="#app-explorer?category=reddit" class="card-button" onclick="filterByCategory('reddit')">
                             Explore Reddit Apps
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -235,7 +235,7 @@
                             <span><i class="fas fa-store"></i> E-commerce</span>
                             <span><i class="fas fa-chart-bar"></i> Analytics</span>
                         </div>
-                        <a href="facebook/" class="card-button">
+                        <a href="#app-explorer?category=facebook" class="card-button" onclick="filterByCategory('facebook')">
                             Explore Facebook Apps
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -265,7 +265,7 @@
                             <span class="feature">Animation Tools</span>
                             <span class="feature">Video Enhancement</span>
                         </div>
-                        <a href="content-creation/video-generators.md" class="card-button">
+                        <a href="#app-explorer?feature=video" class="card-button" onclick="filterByFeature('video')">
                             View Video Tools
                             <i class="fas fa-play"></i>
                         </a>
@@ -282,7 +282,7 @@
                             <span class="feature">Background Removal</span>
                             <span class="feature">Style Transfer</span>
                         </div>
-                        <a href="content-creation/image-editors.md" class="card-button">
+                        <a href="#app-explorer?feature=image" class="card-button" onclick="filterByFeature('image')">
                             View Image Tools
                             <i class="fas fa-images"></i>
                         </a>
@@ -299,7 +299,7 @@
                             <span class="feature">Caption Generation</span>
                             <span class="feature">Copywriting</span>
                         </div>
-                        <a href="content-creation/text-generators.md" class="card-button">
+                        <a href="#app-explorer?feature=text" class="card-button" onclick="filterByFeature('text')">
                             View Text Tools
                             <i class="fas fa-edit"></i>
                         </a>
@@ -316,7 +316,7 @@
                             <span class="feature">AI Music</span>
                             <span class="feature">Audio Enhancement</span>
                         </div>
-                        <a href="content-creation/audio-tools.md" class="card-button">
+                        <a href="#app-explorer?feature=audio" class="card-button" onclick="filterByFeature('audio')">
                             View Audio Tools
                             <i class="fas fa-music"></i>
                         </a>
@@ -346,7 +346,7 @@
                             <li><i class="fas fa-check"></i> AI-powered insights</li>
                             <li><i class="fas fa-check"></i> Social listening</li>
                         </ul>
-                        <a href="analytics/social-media.md" class="card-button">
+                        <a href="#app-explorer?feature=analytics" class="card-button" onclick="filterByFeature('analytics')">
                             View Analytics Tools
                             <i class="fas fa-chart-bar"></i>
                         </a>
@@ -363,7 +363,7 @@
                             <li><i class="fas fa-check"></i> ROI measurement</li>
                             <li><i class="fas fa-check"></i> A/B testing</li>
                         </ul>
-                        <a href="analytics/performance.md" class="card-button">
+                        <a href="#app-explorer?feature=analytics" class="card-button" onclick="filterByFeature('analytics')">
                             View Performance Tools
                             <i class="fas fa-rocket"></i>
                         </a>
@@ -380,7 +380,7 @@
                             <li><i class="fas fa-check"></i> Behavior analysis</li>
                             <li><i class="fas fa-check"></i> Audience segmentation</li>
                         </ul>
-                        <a href="analytics/audience.md" class="card-button">
+                        <a href="#app-explorer?feature=analytics" class="card-button" onclick="filterByFeature('analytics')">
                             View Audience Tools
                             <i class="fas fa-user-friends"></i>
                         </a>
@@ -409,7 +409,7 @@
                             <span><i class="fas fa-sync"></i> Unified Management</span>
                             <span><i class="fas fa-broadcast-tower"></i> Cross-Platform Publishing</span>
                         </div>
-                        <a href="general/multi-platform.md" class="card-button">
+                        <a href="#app-explorer?feature=automation" class="card-button" onclick="filterByFeature('automation')">
                             Explore Multi-Platform
                             <i class="fas fa-external-link-alt"></i>
                         </a>
@@ -425,7 +425,7 @@
                             <span><i class="fas fa-clock"></i> Smart Scheduling</span>
                             <span><i class="fas fa-calendar-check"></i> Content Planning</span>
                         </div>
-                        <a href="general/scheduling.md" class="card-button">
+                        <a href="#app-explorer?feature=scheduling" class="card-button" onclick="filterByFeature('scheduling')">
                             View Scheduling Tools
                             <i class="fas fa-calendar"></i>
                         </a>
@@ -441,7 +441,7 @@
                             <span><i class="fas fa-robot"></i> Process Automation</span>
                             <span><i class="fas fa-tasks"></i> Workflow Building</span>
                         </div>
-                        <a href="general/workflows.md" class="card-button">
+                        <a href="#app-explorer?feature=automation" class="card-button" onclick="filterByFeature('automation')">
                             Explore Workflows
                             <i class="fas fa-flow-chart"></i>
                         </a>

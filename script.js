@@ -155,6 +155,162 @@ const appsDatabase = [
         playStoreUrl: "https://play.google.com/store/apps/details?id=com.facebook.pages.app",
         developer: "Meta Platforms",
         size: "89MB"
+    },
+    {
+        id: 13,
+        name: "TikTok Studio",
+        category: "tiktok",
+        rating: 4.4,
+        price: "free",
+        description: "TikTok's creator studio for managing content, analyzing performance, and accessing creator tools.",
+        features: ["analytics", "video", "automation"],
+        icon: "fab fa-tiktok",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.creator",
+        developer: "ByteDance",
+        size: "67MB"
+    },
+    {
+        id: 14,
+        name: "Lensa AI",
+        category: "snapchat",
+        rating: 4.1,
+        price: "freemium",
+        description: "AI-powered photo editor with magic avatars, background replacement, and face enhancement features.",
+        features: ["ai", "image", "editing"],
+        icon: "fas fa-sparkles",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.lensa.app",
+        developer: "Prisma Labs",
+        size: "134MB"
+    },
+    {
+        id: 15,
+        name: "Reddit Enhancement Suite",
+        category: "reddit",
+        rating: 4.3,
+        price: "free",
+        description: "Enhanced Reddit browsing with advanced features, custom filters, and productivity tools.",
+        features: ["automation", "analytics", "social"],
+        icon: "fab fa-reddit-alien",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.andrewshu.android.reddit",
+        developer: "Reddit Enhancement",
+        size: "12MB"
+    },
+    {
+        id: 16,
+        name: "Facebook Ads Manager",
+        category: "facebook",
+        rating: 4.0,
+        price: "free",
+        description: "Create, manage, and track Facebook and Instagram ad campaigns with detailed analytics and targeting.",
+        features: ["automation", "analytics", "advertising"],
+        icon: "fas fa-bullhorn",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.facebook.adsmanager",
+        developer: "Meta Platforms",
+        size: "78MB"
+    },
+    {
+        id: 17,
+        name: "Mubert AI",
+        category: "content",
+        rating: 4.2,
+        price: "freemium",
+        description: "AI music generation for videos, streams, and content creation with royalty-free tracks.",
+        features: ["ai", "audio", "automation"],
+        icon: "fas fa-music",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.mubert.mobile",
+        developer: "Mubert",
+        size: "45MB"
+    },
+    {
+        id: 18,
+        name: "Sprout Social",
+        category: "automation",
+        rating: 4.4,
+        price: "paid",
+        description: "Enterprise social media management with advanced analytics, team collaboration, and CRM integration.",
+        features: ["automation", "analytics", "scheduling"],
+        icon: "fas fa-seedling",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.sproutsocial.android",
+        developer: "Sprout Social",
+        size: "89MB"
+    },
+    {
+        id: 19,
+        name: "Reface AI",
+        category: "snapchat",
+        rating: 4.0,
+        price: "freemium",
+        description: "AI face swap app for videos and GIFs with celebrity faces and custom animations.",
+        features: ["ai", "video", "editing"],
+        icon: "fas fa-theater-masks",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.neocortext.reface",
+        developer: "RefaceAI",
+        size: "156MB"
+    },
+    {
+        id: 20,
+        name: "Apollo for Reddit",
+        category: "reddit",
+        rating: 4.5,
+        price: "freemium",
+        description: "Premium Reddit client with gesture navigation, media optimization, and advanced customization.",
+        features: ["automation", "social", "analytics"],
+        icon: "fas fa-rocket",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.laurencedawson.reddit_sync",
+        developer: "Apollo Team",
+        size: "45MB"
+    },
+    {
+        id: 21,
+        name: "VLLO",
+        category: "tiktok",
+        rating: 4.4,
+        price: "freemium",
+        description: "AI-assisted video editing with auto-subtitle generation, smart crop, and template-based editing.",
+        features: ["ai", "video", "editing"],
+        icon: "fas fa-film",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.darinsoft.vimo",
+        developer: "Darinsoft",
+        size: "123MB"
+    },
+    {
+        id: 22,
+        name: "Creator Studio",
+        category: "facebook",
+        rating: 4.1,
+        price: "free",
+        description: "Meta's content management for Facebook and Instagram creators with publishing and analytics tools.",
+        features: ["automation", "analytics", "scheduling"],
+        icon: "fas fa-video-plus",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.facebook.creatorapp",
+        developer: "Meta Platforms",
+        size: "67MB"
+    },
+    {
+        id: 23,
+        name: "Runway ML",
+        category: "content",
+        rating: 4.3,
+        price: "freemium",
+        description: "Advanced AI creative tools for video generation, image editing, and creative automation.",
+        features: ["ai", "video", "image"],
+        icon: "fas fa-wand-magic-sparkles",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.runwayml.app",
+        developer: "Runway AI",
+        size: "234MB"
+    },
+    {
+        id: 24,
+        name: "SocialBee",
+        category: "automation",
+        rating: 4.2,
+        price: "paid",
+        description: "Social media management with content categorization, evergreen recycling, and RSS automation.",
+        features: ["automation", "scheduling", "analytics"],
+        icon: "fas fa-bee",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.socialbee.app",
+        developer: "SocialBee",
+        size: "56MB"
     }
 ];
 
@@ -373,6 +529,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize Interactive App Explorer
     initializeAppExplorer();
+    
+    // Handle URL parameters for direct links
+    handleURLParameters();
     
     // Add theme toggle functionality
     function addThemeToggle() {
@@ -877,6 +1036,120 @@ function showNotification(message) {
 function trackAppClick(appName, action) {
     console.log(`Tracked: ${action} clicked for ${appName}`);
     // Here you would integrate with your analytics service
+}
+
+// Category and Feature Filtering Functions
+function filterByCategory(category) {
+    // Scroll to app explorer
+    document.getElementById('app-explorer').scrollIntoView({ behavior: 'smooth' });
+    
+    // Wait for scroll to complete, then apply filter
+    setTimeout(() => {
+        // Set the platform filter
+        const platformFilter = document.getElementById('platform-filter');
+        if (platformFilter) {
+            platformFilter.value = category;
+        }
+        
+        // Clear search and other filters
+        clearAllFilters();
+        
+        // Apply the category filter
+        applyFilters();
+        
+        // Show notification
+        showNotification(`Showing ${category} apps`);
+        
+        // Highlight the active filter
+        highlightActiveFilter('platform', category);
+    }, 500);
+}
+
+function filterByFeature(feature) {
+    // Scroll to app explorer
+    document.getElementById('app-explorer').scrollIntoView({ behavior: 'smooth' });
+    
+    // Wait for scroll to complete, then apply filter
+    setTimeout(() => {
+        // Clear other filters first
+        clearAllFilters();
+        
+        // Activate the feature tag
+        const featureTag = document.querySelector(`[data-feature="${feature}"]`);
+        if (featureTag) {
+            featureTag.classList.add('active');
+        }
+        
+        // Apply the feature filter
+        applyFilters();
+        
+        // Show notification
+        showNotification(`Showing ${formatFeature(feature)} apps`);
+        
+        // Highlight the active filter
+        highlightActiveFilter('feature', feature);
+    }, 500);
+}
+
+function clearAllFilters() {
+    // Clear search input
+    const searchInput = document.getElementById('app-search');
+    if (searchInput) {
+        searchInput.value = '';
+    }
+    
+    // Reset all select filters
+    const platformFilter = document.getElementById('platform-filter');
+    const ratingFilter = document.getElementById('rating-filter');
+    const priceFilter = document.getElementById('price-filter');
+    const sortBy = document.getElementById('sort-by');
+    
+    if (platformFilter) platformFilter.value = '';
+    if (ratingFilter) ratingFilter.value = '';
+    if (priceFilter) priceFilter.value = '';
+    if (sortBy) sortBy.value = 'featured';
+    
+    // Clear all feature tags
+    const featureTags = document.querySelectorAll('.feature-tag');
+    featureTags.forEach(tag => tag.classList.remove('active'));
+}
+
+function highlightActiveFilter(type, value) {
+    // Add visual feedback for active filters
+    const filterElement = type === 'platform' 
+        ? document.getElementById('platform-filter')
+        : document.querySelector(`[data-feature="${value}"]`);
+    
+    if (filterElement) {
+        filterElement.style.animation = 'pulse 0.5s ease-in-out';
+        setTimeout(() => {
+            if (filterElement.style) {
+                filterElement.style.animation = '';
+            }
+        }, 500);
+    }
+}
+
+// URL parameter handling for direct links
+function handleURLParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    const feature = urlParams.get('feature');
+    
+    if (category) {
+        setTimeout(() => filterByCategory(category), 1000);
+    } else if (feature) {
+        setTimeout(() => filterByFeature(feature), 1000);
+    }
+}
+
+// Enhanced notification function with category/feature context
+function showCategoryNotification(type, value) {
+    const message = type === 'category' 
+        ? `Showing ${value.charAt(0).toUpperCase() + value.slice(1)} apps`
+        : `Showing ${formatFeature(value)} apps`;
+    
+    showNotification(message);
 }
 
 // Add mobile menu styles
