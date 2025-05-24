@@ -17,6 +17,7 @@
                     <span>JessGeterDone</span>
                 </div>
                 <ul class="nav-links">
+                    <li><a href="#app-explorer">Explore Apps</a></li>
                     <li><a href="#platforms">Platforms</a></li>
                     <li><a href="#content">Content Creation</a></li>
                     <li><a href="#analytics">Analytics</a></li>
@@ -46,7 +47,7 @@
                         <span class="stat-label">Lines of Content</span>
                     </div>
                 </div>
-                <a href="#platforms" class="cta-button">
+                <a href="#app-explorer" class="cta-button">
                     <i class="fas fa-rocket"></i>
                     Explore Apps
                 </a>
@@ -55,6 +56,113 @@
     </header>
 
     <main>
+        <!-- Interactive App Explorer Section -->
+        <section id="app-explorer" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-search"></i>
+                    Explore Apps Interactively
+                </h2>
+                <p class="section-subtitle">Search, filter, and discover the perfect Android AI apps for your needs</p>
+                
+                <!-- Search and Filter Bar -->
+                <div class="search-filter-bar">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="app-search" placeholder="Search apps by name, features, or description...">
+                        <button class="clear-search" id="clear-search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="filters">
+                        <select id="platform-filter">
+                            <option value="">All Platforms</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="snapchat">Snapchat</option>
+                            <option value="reddit">Reddit</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="content">Content Creation</option>
+                            <option value="analytics">Analytics</option>
+                            <option value="automation">Automation</option>
+                        </select>
+                        
+                        <select id="rating-filter">
+                            <option value="">All Ratings</option>
+                            <option value="4.5">4.5+ Stars</option>
+                            <option value="4.0">4.0+ Stars</option>
+                            <option value="3.5">3.5+ Stars</option>
+                        </select>
+                        
+                        <select id="price-filter">
+                            <option value="">All Prices</option>
+                            <option value="free">Free</option>
+                            <option value="freemium">Freemium</option>
+                            <option value="paid">Paid</option>
+                        </select>
+                        
+                        <button class="filter-toggle" id="advanced-filters">
+                            <i class="fas fa-sliders-h"></i>
+                            Advanced
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Advanced Filters Panel -->
+                <div class="advanced-filters-panel" id="advanced-panel">
+                    <div class="filter-group">
+                        <h4>Features</h4>
+                        <div class="feature-tags">
+                            <button class="feature-tag" data-feature="ai">AI-Powered</button>
+                            <button class="feature-tag" data-feature="automation">Automation</button>
+                            <button class="feature-tag" data-feature="analytics">Analytics</button>
+                            <button class="feature-tag" data-feature="video">Video Editing</button>
+                            <button class="feature-tag" data-feature="image">Image Editing</button>
+                            <button class="feature-tag" data-feature="text">Text Generation</button>
+                            <button class="feature-tag" data-feature="audio">Audio Tools</button>
+                            <button class="feature-tag" data-feature="scheduling">Scheduling</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Sort By</h4>
+                        <select id="sort-by">
+                            <option value="name">App Name</option>
+                            <option value="rating">Rating</option>
+                            <option value="category">Category</option>
+                            <option value="featured">Featured</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Results Counter -->
+                <div class="results-info">
+                    <span id="results-count">Showing all apps</span>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Interactive App Grid -->
+                <div class="interactive-apps-grid" id="apps-container">
+                    <!-- Apps will be dynamically loaded here -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more">
+                        <i class="fas fa-plus"></i>
+                        Load More Apps
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <!-- Social Media Platforms Section -->
         <section id="platforms" class="section">
             <div class="container">
