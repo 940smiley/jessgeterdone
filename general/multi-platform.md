@@ -3,20 +3,52 @@
 A curated list of Android AI apps for managing multiple social media platforms simultaneously.
 
 <!-- Dynamic App Explorer for Multi-Platform Category -->
+<div class="search-filter-bar">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="app-search-multiplatform" placeholder="Search multi-platform apps by name, features, or description...">
+    <button class="clear-search" id="clear-search-multiplatform">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
 <div id="apps-container-multiplatform" class="interactive-apps-grid"></div>
 
 <script>
-// This script assumes the global appsDatabase and renderApps function from script.js are available
 (function() {
-  if (typeof appsDatabase !== 'undefined' && typeof renderApps === 'function') {
-    // Filter apps for the 'automation' or 'multi-platform' category
-    var multiPlatformApps = appsDatabase.filter(function(app) {
+  function filterMultiPlatformApps(query) {
+    var apps = (typeof appsDatabase !== 'undefined') ? appsDatabase.filter(function(app) {
       return app.category === 'automation' || app.category === 'multi-platform';
-    });
-    renderApps(multiPlatformApps, false, 'apps-container-multiplatform');
-  } else {
-    document.getElementById('apps-container-multiplatform').innerHTML = '<p style="color:#e53e3e">App explorer not available. Please view this page on the main site.</p>';
+    }) : [];
+    if (query) {
+      apps = apps.filter(function(app) {
+        return app.name.toLowerCase().includes(query) ||
+          (app.description && app.description.toLowerCase().includes(query)) ||
+          (app.features && app.features.some(function(f) { return f.toLowerCase().includes(query); }));
+      });
+    }
+    if (typeof renderApps === 'function') {
+      // Temporarily override appsPerPage to show all
+      var oldAppsPerPage = window.appsPerPage;
+      window.appsPerPage = 1000;
+      renderApps(apps, false, 'apps-container-multiplatform');
+      window.appsPerPage = oldAppsPerPage;
+    }
   }
+  var input = document.getElementById('app-search-multiplatform');
+  if (input) {
+    input.addEventListener('input', function() {
+      filterMultiPlatformApps(this.value.toLowerCase());
+    });
+  }
+  var clearBtn = document.getElementById('clear-search-multiplatform');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      filterMultiPlatformApps('');
+    });
+  }
+  filterMultiPlatformApps('');
 })();
 </script>
 
