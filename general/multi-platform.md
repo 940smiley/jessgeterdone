@@ -10,18 +10,21 @@ A curated list of Android AI apps for managing multiple social media platforms s
   - Team collaboration features
   - Advanced analytics dashboard
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.hootsuite.droid)
 
 - **Buffer** - User-friendly social scheduler
   - Clean, intuitive interface
   - Pablo image creation tool
   - Browser extension support
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=org.buffer.android)
 
 - **Sprout Social** - Enterprise social management
   - Smart inbox for messages
   - CRM integration capabilities
   - Advanced reporting features
   - Rating: 4.4/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.sproutsocial.android)
 
 ### All-in-One Solutions
 - **Later** - Visual content scheduler
@@ -29,12 +32,14 @@ A curated list of Android AI apps for managing multiple social media platforms s
   - Visual content calendar
   - Linkin.bio tool included
   - Rating: 4.4/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=me.latergram.latergramme)
 
 - **SocialBee** - Content categorization focus
   - Content category organization
   - Evergreen content recycling
   - RSS feed automation
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.socialbee.app)
 
 ## 📱 Mobile-First Multi-Platform Apps
 

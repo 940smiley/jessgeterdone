@@ -38,12 +38,14 @@ A curated list of Android AI apps for tracking social media performance, engagem
   - Growth rate calculations
   - Projected future growth
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.socialblade.android)
 
 - **HypeAuditor** - Audience quality analysis
   - Real follower detection
   - Engagement authenticity
   - Growth pattern analysis
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.hypeauditor.android)
 
 ### Content Performance
 - **Content Performance Analyzer** - Post-level analytics
@@ -94,12 +96,14 @@ A curated list of Android AI apps for tracking social media performance, engagem
   - Team collaboration features
   - Custom reporting tools
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.statusbrew.android)
 
 - **AgoraPulse** - Social media dashboard
   - Unified inbox management
   - Performance analytics
   - Team workflow tools
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.agorapulse.manager)
 
 ### Quick Performance Checks
 - **Social Stats** - Simple metrics tracking

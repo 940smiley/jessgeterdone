@@ -10,18 +10,21 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Face tracking technology
   - Real-time effects
   - Free with premium lenses
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.snapchat.android)
 
 - **FaceApp** - AI-powered photo editor
   - Age progression/regression
   - Gender swap filters
   - Hair color and style changes
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=io.faceapp)
 
 - **Reface** - AI face swap app
   - Video face replacement
   - GIF creation with your face
   - Celebrity face swaps
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.neocortext.reface)
 
 ### AR Filters & Effects
 - **Lens Studio** - Create custom Snapchat lenses
@@ -44,12 +47,14 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Brand kit integration
   - AI-powered design suggestions
   - Rating: 4.6/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.canva.editor)
 
 - **PicsArt** - Photo editing with AI features
   - Background removal
   - AI-generated effects
   - Collage and story creation
   - Rating: 4.4/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.picsart.studio)
 
 ### Animation & Motion Graphics
 - **LottieFiles** - Animation library
@@ -72,6 +77,7 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Snapchat integration
   - Outfit and style customization
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.bitstrips.imoji)
 
 ### Story Enhancement
 - **Story Saver** - Content backup tools
@@ -88,12 +94,14 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Celebrity masks
   - Animal transformations
   - Rating: 4.1/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.facebook.msqrd)
 
 - **YouCam Perfect** - Beauty camera app
   - Real-time skin smoothing
   - Makeup application
   - Body reshaping tools
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.cyberlink.youcamperfect)
 
 ### Voice & Audio
 - **Voicemod** - Voice changer app
@@ -101,6 +109,7 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Celebrity voice filters
   - Background noise removal
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=net.voicemod.android)
 
 ## 📊 Analytics & Growth
 
@@ -126,12 +135,14 @@ A curated list of Android AI apps for Snapchat content creation, automation, and
   - Story planning tools
   - Team collaboration
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=me.latergram.latergramme)
 
 - **Buffer** - Multi-platform scheduling
   - Story scheduling (limited)
   - Content library management
   - Analytics integration
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=org.buffer.android)
 
 ### Content Ideas
 - **BuzzSumo** - Content discovery

@@ -10,6 +10,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Neural filters and effects
   - Cloud synchronization
   - Rating: 4.5/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.adobe.photoshopmix)
 
 - **Luminar AI** - AI-first photo editor
   - One-click sky replacement
@@ -29,18 +30,21 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Advanced editing tools
   - Community features
   - Rating: 4.6/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.vsco.cam)
 
 - **Snapseed** - Google's photo editor
   - Professional editing tools
   - Selective adjustments
   - RAW file support
   - Rating: 4.7/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.niksoftware.snapseed)
 
 - **PicsArt** - Social photo editor
   - AI effects and filters
   - Collage creation
   - Drawing tools
   - Rating: 4.4/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.picsart.studio)
 
 ## 🎨 AI Image Generation
 
@@ -84,18 +88,21 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - High-quality edge detection
   - Bulk processing
   - Rating: 4.5/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.kaleido.background.eraser)
 
 - **Canva Background Remover** - Integrated tool
   - Seamless design workflow
   - Template integration
   - Brand kit compatibility
   - Rating: 4.4/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.canva.editor)
 
 - **PhotoRoom** - Product photography
   - Instant background removal
   - Professional templates
   - Batch processing
   - Rating: 4.3/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.photoroom.app)
 
 ### Object Manipulation
 - **TouchRetouch** - Object removal
@@ -103,6 +110,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Clone stamp tools
   - Line removal features
   - Rating: 4.2/5 ⭐
+  - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.advasoft.touchretouch)
 
 - **GIMP** - Free advanced editor
   - Professional tools
