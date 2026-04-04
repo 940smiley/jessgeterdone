@@ -47,6 +47,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
 ## 📝 Caption & Hashtag Tools
 
 ### Text Generation
+
 - **Copy.ai** - AI writing assistant
   - TikTok caption generation
   - Hashtag suggestions
@@ -60,6 +61,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
   - Rating: 4.3/5 ⭐
 
 ### Hashtag Research
+
 - **Display Purposes** - Hashtag generator
   - Related hashtag suggestions
   - Popularity analytics
@@ -75,6 +77,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
 ## 🎵 Music & Audio
 
 ### Audio Enhancement
+
 - **Adobe Audition** - Professional audio editing
   - AI-powered noise reduction
   - Voice enhancement tools
@@ -88,6 +91,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
   - Rating: 4.3/5 ⭐
 
 ### Music Discovery
+
 - **Epidemic Sound** - Royalty-free music
   - TikTok-optimized tracks
   - Trending music discovery
@@ -97,6 +101,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
 ## 📊 Analytics & Growth
 
 ### Performance Tracking
+
 - **TikTok Analytics** (Built-in)
   - Native analytics dashboard
   - Audience insights
@@ -110,6 +115,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
   - Rating: 4.2/5 ⭐
 
 ### Growth Tools
+
 - **Later** - Social media scheduler
   - TikTok post scheduling
   - Best time to post analysis
@@ -125,6 +131,7 @@ A curated list of Android AI apps for TikTok content creation, automation, and g
 ## 🎯 Content Ideas & Trends
 
 ### Trend Discovery
+
 - **TrendTok** - Trend tracking app
   - Real-time trend analysis
   - Hashtag performance data

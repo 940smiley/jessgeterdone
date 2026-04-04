@@ -48,6 +48,7 @@ A curated list of awesome Android AI apps for social media automation, content c
 ## 🎯 Purpose
 
 This repository provides comprehensive lists of legitimate Android AI applications that help with:
+
 - Content creation and automation
 - Social media management
 - Digital marketing tools
@@ -57,23 +58,27 @@ This repository provides comprehensive lists of legitimate Android AI applicatio
 ## 📱 Categories
 
 ### Social Media Platforms
+
 - [TikTok Automation & Tools](./tiktok/README.md)
 - [Snapchat Tools & Utilities](./snapchat/README.md)
 - [Reddit Automation & Management](./reddit/README.md)
 - [Facebook Marketing & Tools](./facebook/README.md)
 
 ### Content Creation
+
 - [AI Video Generators](./content-creation/video-generators.md)
 - [Image & Photo Editors](./content-creation/image-editors.md)
 - [Text & Caption Generators](./content-creation/text-generators.md)
 - [Voice & Audio Tools](./content-creation/audio-tools.md)
 
 ### Analytics & Insights
+
 - [Social Media Analytics](./analytics/social-media.md)
 - [Performance Tracking](./analytics/performance.md)
 - [Audience Analysis](./analytics/audience.md)
 
 ### General Automation
+
 - [Multi-Platform Tools](./general/multi-platform.md)
 - [Scheduling & Planning](./general/scheduling.md)
 - [Workflow Automation](./general/workflows.md)
@@ -89,6 +94,7 @@ This repository provides comprehensive lists of legitimate Android AI applicatio
 ## 🤝 Contributing
 
 Feel free to contribute by:
+
 - Adding new apps with descriptions
 - Updating existing information
 - Reporting broken links

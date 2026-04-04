@@ -47,6 +47,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 🤖 AI Video Creation
 
 ### Text-to-Video Generators
+
 - **Luma Dream Machine** - AI video from text
   - High-quality video generation
   - Realistic motion and physics
@@ -66,6 +67,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.2/5 ⭐
 
 ### Image-to-Video
+
 - **Stable Video Diffusion** - Open-source video AI
   - Image animation
   - Camera movement control
@@ -81,6 +83,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 📱 Mobile Video Creation
 
 ### Template-Based Generators
+
 - **Pictory** - AI video from scripts
   - Automatic scene selection
   - Voice-over generation
@@ -100,6 +103,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.1/5 ⭐
 
 ### Short-Form Video Creators
+
 - **Opus Clip** - Long-form to short-form
   - AI-powered clip extraction
   - Viral moment identification
@@ -115,6 +119,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 🎭 Character & Animation
 
 ### Avatar Creation
+
 - **Ready Player Me** - 3D avatar generator
   - Photo-to-avatar conversion
   - Animation-ready characters
@@ -128,6 +133,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.5/5 ⭐
 
 ### Animation Tools
+
 - **Toonly** - 2D animation creator
   - Drag-and-drop animation
   - Character library
@@ -143,6 +149,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 🎵 Music & Audio Integration
 
 ### AI Music Generation
+
 - **Mubert** - AI music for videos
   - Mood-based generation
   - Copyright-free tracks
@@ -156,6 +163,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.3/5 ⭐
 
 ### Voice Generation
+
 - **ElevenLabs** - AI voice synthesis
   - Natural-sounding voices
   - Voice cloning capabilities
@@ -171,6 +179,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 📊 Business & Marketing Videos
 
 ### Explainer Video Creators
+
 - **Vyond** - Animated business videos
   - Professional templates
   - Character customization
@@ -184,6 +193,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.1/5 ⭐
 
 ### Product Demo Videos
+
 - **Camtasia** - Screen recording and editing
   - Screen capture capabilities
   - Video editing tools
@@ -199,6 +209,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 🌐 AI Video Enhancement
 
 ### Upscaling & Enhancement
+
 - **Topaz Video Enhance AI** - Video upscaling
   - AI-powered resolution increase
   - Noise reduction
@@ -212,6 +223,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.1/5 ⭐
 
 ### Style Transfer
+
 - **DeepArt** - Artistic style transfer
   - Painting-style videos
   - Custom style training
@@ -227,6 +239,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 🚀 Advanced Features
 
 ### Motion Graphics
+
 - **Adobe After Effects** - Professional motion graphics
   - AI-powered effects
   - Template marketplace
@@ -240,6 +253,7 @@ A curated list of Android AI apps for video creation, editing, and animation.
   - Rating: 4.4/5 ⭐
 
 ### Real-Time Generation
+
 - **Live Portrait** - Real-time face animation
   - Live video effects
   - Face tracking
@@ -257,12 +271,14 @@ A curated list of Android AI apps for video creation, editing, and animation.
 ## 💡 Creative Tips
 
 ### Prompt Engineering
+
 - Be specific about visual style and mood
 - Include camera movement descriptions
 - Specify lighting and color preferences
 - Mention duration and pacing requirements
 
 ### Content Planning
+
 - Storyboard before generating
 - Plan for multiple video variations
 - Consider audio synchronization

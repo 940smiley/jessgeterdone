@@ -126,6 +126,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 🎨 AI Image Generation
 
 ### Text-to-Image Generators
+
 - **DALL-E 2** - OpenAI's image generator
   - High-quality image creation
   - Style and concept control
@@ -145,6 +146,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Rating: 4.4/5 ⭐
 
 ### Mobile Image Generators
+
 - **Dream by WOMBO** - AI art generator
   - Quick style-based generation
   - Mobile-optimized interface
@@ -160,6 +162,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 🖼️ Background & Object Editing
 
 ### Background Removal
+
 - **Remove.bg** - AI background removal
   - One-click background removal
   - High-quality edge detection
@@ -182,6 +185,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - [📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.photoroom.app)
 
 ### Object Manipulation
+
 - **TouchRetouch** - Object removal
   - Smart object erasing
   - Clone stamp tools
@@ -198,6 +202,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 👤 Portrait & Beauty Editing
 
 ### AI Beauty Enhancement
+
 - **FaceApp** - AI face editing
   - Age progression/regression
   - Smile and expression editing
@@ -217,6 +222,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Rating: 4.1/5 ⭐
 
 ### Portrait Enhancement
+
 - **Portrait Pro** - Professional portraits
   - Skin texture enhancement
   - Eye and teeth whitening
@@ -232,6 +238,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 🎯 Social Media Optimization
 
 ### Platform-Specific Editors
+
 - **Unfold** - Story creator
   - Instagram Story templates
   - Minimalist design focus
@@ -245,6 +252,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Rating: 4.2/5 ⭐
 
 ### Content Sizing
+
 - **Buffer Pablo** - Social media graphics
   - Platform-specific dimensions
   - Template library
@@ -260,6 +268,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 🌟 Creative Effects & Filters
 
 ### AI Art Styles
+
 - **Prisma** - Artistic filters
   - Neural network filters
   - Art style transfer
@@ -273,6 +282,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Rating: 4.1/5 ⭐
 
 ### Special Effects
+
 - **Pixlr** - Online photo editor
   - AI-powered tools
   - Layer support
@@ -288,6 +298,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 🔧 Advanced Tools
 
 ### Color Correction
+
 - **Lightroom Mobile** - Professional editing
   - RAW photo processing
   - Preset synchronization
@@ -301,6 +312,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Rating: 4.4/5 ⭐
 
 ### Image Enhancement
+
 - **Topaz Sharpen AI** - Image sharpening
   - AI-powered detail enhancement
   - Noise reduction
@@ -316,6 +328,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 📱 Quick Mobile Editors
 
 ### One-Tap Enhancement
+
 - **Google Photos** - Auto enhancement
   - AI-powered suggestions
   - Free unlimited storage
@@ -329,6 +342,7 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
   - Rating: 4.4/5 ⭐
 
 ### Speed Editing
+
 - **Instasize** - Quick resize and edit
   - Social media sizing
   - Quick filters
@@ -352,12 +366,14 @@ A curated list of Android AI apps for photo editing, image enhancement, and grap
 ## 💡 Creative Tips
 
 ### Workflow Optimization
+
 - Organize photos before editing
 - Use presets for consistent style
 - Save custom settings for reuse
 - Backup original files
 
 ### Style Development
+
 - Study trending visual styles
 - Experiment with different techniques
 - Develop signature editing approach

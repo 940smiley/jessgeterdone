@@ -574,30 +574,30 @@ body {
     .nav-links {
         display: none;
     }
-    
+
     .mobile-menu {
         display: flex;
     }
-    
+
     .hero-stats {
         gap: 30px;
     }
-    
+
     .cards-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .section {
         padding: 60px 0;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
     }
-    
+
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -608,16 +608,16 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .card {
         padding: 20px;
     }
-    
+
     .hero-stats {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
     }
@@ -1083,37 +1083,37 @@ body {
     .search-filter-bar {
         padding: 15px;
     }
-    
+
     .filters {
         justify-content: center;
     }
-    
+
     .filters select {
         flex: 1;
         min-width: 120px;
     }
-    
+
     .interactive-apps-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .results-info {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
-    
+
     .interactive-apps-grid.list-view .interactive-app-card {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .interactive-apps-grid.list-view .app-info {
         margin-left: 0;
         margin-top: 15px;
     }
-    
+
     .interactive-apps-grid.list-view .app-actions {
         margin-left: 0;
         margin-top: 15px;

@@ -325,13 +325,13 @@ const appsPerPage = 6;
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
-    
+
     // Toggle mobile menu
     mobileMenu.addEventListener('click', function() {
         mobileMenu.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
-    
+
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function() {
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.remove('active');
         });
     });
-    
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Add scroll effect to navbar
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
@@ -367,13 +367,13 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.boxShadow = 'none';
         }
     });
-    
+
     // Animate cards on scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, observerOptions);
-    
+
     // Observe all cards
     document.querySelectorAll('.card').forEach(card => {
         card.style.opacity = '0';
@@ -390,14 +390,14 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
-    
+
     // Add typing effect to hero title
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
         const text = heroTitle.textContent;
         heroTitle.textContent = '';
         let i = 0;
-        
+
         function typeWriter() {
             if (i < text.length) {
                 heroTitle.textContent += text.charAt(i);
@@ -405,30 +405,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(typeWriter, 100);
             }
         }
-        
+
         setTimeout(typeWriter, 500);
     }
-    
+
     // Add counter animation to stats
     const statNumbers = document.querySelectorAll('.stat-number');
-    
+
     function animateCounter(element) {
         const target = parseInt(element.textContent.replace(/\D/g, ''));
         const increment = target / 100;
         let current = 0;
-        
+
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
                 current = target;
                 clearInterval(timer);
             }
-            
+
             const suffix = element.textContent.includes('+') ? '+' : '';
             element.textContent = Math.floor(current) + suffix;
         }, 20);
     }
-    
+
     // Animate counters when they come into view
     const statsObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
@@ -438,11 +438,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, { threshold: 0.7 });
-    
+
     statNumbers.forEach(stat => {
         statsObserver.observe(stat);
     });
-    
+
     // Add parallax effect to hero background
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         }
     });
-    
+
     // Add click tracking for analytics (placeholder)
     document.querySelectorAll('.card-button').forEach(button => {
         button.addEventListener('click', function() {
@@ -460,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Here you could add actual analytics tracking
         });
     });
-    
+
     // Add search functionality (basic)
     function addSearchFunctionality() {
         const searchContainer = document.createElement('div');
@@ -484,16 +484,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 ">
             </div>
         `;
-        
+
         document.body.appendChild(searchContainer);
-        
+
         // Toggle search with Ctrl+K
         document.addEventListener('keydown', function(e) {
             if (e.ctrlKey && e.key === 'k') {
                 e.preventDefault();
                 const searchContainer = document.querySelector('.search-container');
                 const searchInput = document.getElementById('search-input');
-                
+
                 if (searchContainer.style.display === 'none') {
                     searchContainer.style.display = 'block';
                     searchInput.focus();
@@ -501,21 +501,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     searchContainer.style.display = 'none';
                 }
             }
-            
+
             if (e.key === 'Escape') {
                 document.querySelector('.search-container').style.display = 'none';
             }
         });
-        
+
         // Basic search functionality
         document.getElementById('search-input').addEventListener('input', function(e) {
             const searchTerm = e.target.value.toLowerCase();
             const cards = document.querySelectorAll('.card');
-            
+
             cards.forEach(card => {
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const description = card.querySelector('p').textContent.toLowerCase();
-                
+
                 if (title.includes(searchTerm) || description.includes(searchTerm)) {
                     card.style.display = 'block';
                 } else {
@@ -524,15 +524,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    
+
     addSearchFunctionality();
-    
+
     // Initialize Interactive App Explorer
     initializeAppExplorer();
-    
+
     // Handle URL parameters for direct links
     handleURLParameters();
-    
+
     // Add theme toggle functionality
     function addThemeToggle() {
         const themeToggle = document.createElement('button');
@@ -553,18 +553,18 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
         `;
-        
+
         themeToggle.addEventListener('click', function() {
             document.body.classList.toggle('dark-theme');
             const isDark = document.body.classList.contains('dark-theme');
             this.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
         });
-        
+
         document.body.appendChild(themeToggle);
     }
-    
+
     addThemeToggle();
-    
+
     // Add loading animation
     window.addEventListener('load', function() {
         const loader = document.querySelector('.loader');
@@ -573,7 +573,7 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => loader.remove(), 500);
         }
     });
-    
+
     // Add copy to clipboard functionality for GitHub links
     document.querySelectorAll('.card-button').forEach(button => {
         button.addEventListener('contextmenu', function(e) {
@@ -601,44 +601,44 @@ function setupEventListeners() {
     // Search functionality
     const searchInput = document.getElementById('app-search');
     const clearSearch = document.getElementById('clear-search');
-    
+
     if (searchInput) {
         searchInput.addEventListener('input', handleSearch);
     }
-    
+
     if (clearSearch) {
         clearSearch.addEventListener('click', clearSearchInput);
     }
-    
+
     // Filter functionality
     const platformFilter = document.getElementById('platform-filter');
     const ratingFilter = document.getElementById('rating-filter');
     const priceFilter = document.getElementById('price-filter');
     const sortBy = document.getElementById('sort-by');
-    
+
     if (platformFilter) platformFilter.addEventListener('change', applyFilters);
     if (ratingFilter) ratingFilter.addEventListener('change', applyFilters);
     if (priceFilter) priceFilter.addEventListener('change', applyFilters);
     if (sortBy) sortBy.addEventListener('change', applySorting);
-    
+
     // Advanced filters toggle
     const advancedFiltersBtn = document.getElementById('advanced-filters');
     if (advancedFiltersBtn) {
         advancedFiltersBtn.addEventListener('click', toggleAdvancedFilters);
     }
-    
+
     // Feature tags
     const featureTags = document.querySelectorAll('.feature-tag');
     featureTags.forEach(tag => {
         tag.addEventListener('click', toggleFeatureFilter);
     });
-    
+
     // View toggle
     const viewBtns = document.querySelectorAll('.view-btn');
     viewBtns.forEach(btn => {
         btn.addEventListener('click', toggleView);
     });
-    
+
     // Load more
     const loadMoreBtn = document.getElementById('load-more');
     if (loadMoreBtn) {
@@ -648,13 +648,13 @@ function setupEventListeners() {
 
 function handleSearch(e) {
     const searchTerm = e.target.value.toLowerCase();
-    const filtered = appsDatabase.filter(app => 
+    const filtered = appsDatabase.filter(app =>
         app.name.toLowerCase().includes(searchTerm) ||
         app.description.toLowerCase().includes(searchTerm) ||
         app.features.some(feature => feature.toLowerCase().includes(searchTerm)) ||
         app.developer.toLowerCase().includes(searchTerm)
     );
-    
+
     currentApps = filtered;
     currentPage = 1;
     renderApps(currentApps.slice(0, appsPerPage));
@@ -677,26 +677,26 @@ function applyFilters() {
     const ratingFilter = parseFloat(document.getElementById('rating-filter').value);
     const priceFilter = document.getElementById('price-filter').value;
     const searchTerm = document.getElementById('app-search').value.toLowerCase();
-    
+
     // Get active feature filters
     const activeFeatures = Array.from(document.querySelectorAll('.feature-tag.active'))
         .map(tag => tag.dataset.feature);
-    
+
     let filtered = appsDatabase.filter(app => {
-        const matchesSearch = !searchTerm || 
+        const matchesSearch = !searchTerm ||
             app.name.toLowerCase().includes(searchTerm) ||
             app.description.toLowerCase().includes(searchTerm) ||
             app.features.some(feature => feature.toLowerCase().includes(searchTerm));
-        
+
         const matchesPlatform = !platformFilter || app.category === platformFilter;
         const matchesRating = !ratingFilter || app.rating >= ratingFilter;
         const matchesPrice = !priceFilter || app.price === priceFilter;
-        const matchesFeatures = activeFeatures.length === 0 || 
+        const matchesFeatures = activeFeatures.length === 0 ||
             activeFeatures.some(feature => app.features.includes(feature));
-        
+
         return matchesSearch && matchesPlatform && matchesRating && matchesPrice && matchesFeatures;
     });
-    
+
     currentApps = filtered;
     currentPage = 1;
     applySorting();
@@ -704,7 +704,7 @@ function applyFilters() {
 
 function applySorting() {
     const sortBy = document.getElementById('sort-by').value;
-    
+
     switch (sortBy) {
         case 'name':
             currentApps.sort((a, b) => a.name.localeCompare(b.name));
@@ -719,7 +719,7 @@ function applySorting() {
             currentApps.sort((a, b) => b.rating - a.rating);
             break;
     }
-    
+
     renderApps(currentApps.slice(0, appsPerPage * currentPage));
     updateResultsCount();
     updateLoadMoreButton();
@@ -741,7 +741,7 @@ function toggleView(e) {
     const viewBtns = document.querySelectorAll('.view-btn');
     viewBtns.forEach(btn => btn.classList.remove('active'));
     e.target.classList.add('active');
-    
+
     currentView = e.target.dataset.view;
     const container = document.getElementById('apps-container');
     if (container) {
@@ -754,11 +754,11 @@ function loadMoreApps() {
     const startIndex = (currentPage - 1) * appsPerPage;
     const endIndex = currentPage * appsPerPage;
     const additionalApps = currentApps.slice(startIndex, endIndex);
-    
+
     if (additionalApps.length > 0) {
         renderApps(currentApps.slice(0, endIndex), true);
     }
-    
+
     updateLoadMoreButton();
 }
 
@@ -785,11 +785,11 @@ function updateResultsCount() {
 function renderApps(apps, append = false) {
     const container = document.getElementById('apps-container');
     if (!container) return;
-    
+
     if (!append) {
         container.innerHTML = '';
     }
-    
+
     apps.forEach(app => {
         if (!append || !document.querySelector(`[data-app-id="${app.id}"]`)) {
             const appCard = createAppCard(app);
@@ -802,15 +802,15 @@ function createAppCard(app) {
     const card = document.createElement('div');
     card.className = 'interactive-app-card';
     card.setAttribute('data-app-id', app.id);
-    
+
     const isFavorite = favorites.includes(app.id);
     const stars = generateStars(app.rating);
-    
+
     card.innerHTML = `
         <button class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${app.id})">
             <i class="fas fa-heart"></i>
         </button>
-        
+
         <div class="app-header">
             <div class="app-icon">
                 <i class="${app.icon}"></i>
@@ -824,13 +824,13 @@ function createAppCard(app) {
                 <div class="app-price ${app.price}">${formatPrice(app.price)}</div>
             </div>
         </div>
-        
+
         <p class="app-description">${app.description}</p>
-        
+
         <div class="app-features">
             ${app.features.map(feature => `<span class="app-feature">${formatFeature(feature)}</span>`).join('')}
         </div>
-        
+
         <div class="app-actions">
             <a href="${app.playStoreUrl}" target="_blank" class="app-btn" onclick="trackAppClick('${app.name}', 'download')">
                 <i class="fab fa-google-play"></i>
@@ -842,7 +842,7 @@ function createAppCard(app) {
             </button>
         </div>
     `;
-    
+
     return card;
 }
 
@@ -850,20 +850,20 @@ function generateStars(rating) {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
     let stars = '';
-    
+
     for (let i = 0; i < fullStars; i++) {
         stars += '<i class="fas fa-star"></i>';
     }
-    
+
     if (hasHalfStar) {
         stars += '<i class="fas fa-star-half-alt"></i>';
     }
-    
+
     const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
     for (let i = 0; i < emptyStars; i++) {
         stars += '<i class="far fa-star"></i>';
     }
-    
+
     return stars;
 }
 
@@ -890,7 +890,7 @@ function formatFeature(feature) {
         'voice': 'Voice',
         'social': 'Social'
     };
-    
+
     return featureMap[feature] || feature;
 }
 
@@ -901,15 +901,15 @@ function toggleFavorite(appId) {
     } else {
         favorites.push(appId);
     }
-    
+
     localStorage.setItem('favorites', JSON.stringify(favorites));
-    
+
     // Update the favorite button
     const btn = document.querySelector(`[data-app-id="${appId}"] .favorite-btn`);
     if (btn) {
         btn.classList.toggle('active');
     }
-    
+
     // Show notification
     showNotification(index > -1 ? 'Removed from favorites' : 'Added to favorites');
 }
@@ -917,7 +917,7 @@ function toggleFavorite(appId) {
 function showAppDetails(appId) {
     const app = appsDatabase.find(a => a.id === appId);
     if (!app) return;
-    
+
     const modal = createModal(`
         <div style="text-align: center; padding: 20px;">
             <div class="app-icon" style="margin: 0 auto 20px; background: linear-gradient(45deg, #667eea, #764ba2);">
@@ -925,7 +925,7 @@ function showAppDetails(appId) {
             </div>
             <h2>${app.name}</h2>
             <p style="color: #718096; margin-bottom: 20px;">${app.developer}</p>
-            
+
             <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px;">
                 <div>
                     <strong>${app.rating}</strong><br>
@@ -940,13 +940,13 @@ function showAppDetails(appId) {
                     <small>Price</small>
                 </div>
             </div>
-            
+
             <p style="margin-bottom: 20px; line-height: 1.6;">${app.description}</p>
-            
+
             <div style="margin-bottom: 20px;">
                 ${app.features.map(feature => `<span class="app-feature">${formatFeature(feature)}</span>`).join(' ')}
             </div>
-            
+
             <a href="${app.playStoreUrl}" target="_blank" class="app-btn" style="margin-right: 10px;">
                 <i class="fab fa-google-play"></i>
                 Download from Play Store
@@ -956,7 +956,7 @@ function showAppDetails(appId) {
             </button>
         </div>
     `);
-    
+
     document.body.appendChild(modal);
 }
 
@@ -974,7 +974,7 @@ function createModal(content) {
         justify-content: center;
         z-index: 10000;
     `;
-    
+
     const modalContent = document.createElement('div');
     modalContent.style.cssText = `
         background: white;
@@ -984,16 +984,16 @@ function createModal(content) {
         overflow-y: auto;
         box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     `;
-    
+
     modalContent.innerHTML = content;
     modal.appendChild(modalContent);
-    
+
     modal.addEventListener('click', function(e) {
         if (e.target === modal) {
             closeModal();
         }
     });
-    
+
     return modal;
 }
 
@@ -1019,14 +1019,14 @@ function showNotification(message) {
         transform: translateX(400px);
         transition: transform 0.3s ease;
     `;
-    
+
     notification.textContent = message;
     document.body.appendChild(notification);
-    
+
     setTimeout(() => {
         notification.style.transform = 'translateX(0)';
     }, 100);
-    
+
     setTimeout(() => {
         notification.style.transform = 'translateX(400px)';
         setTimeout(() => notification.remove(), 300);
@@ -1042,7 +1042,7 @@ function trackAppClick(appName, action) {
 function filterByCategory(category) {
     // Scroll to app explorer
     document.getElementById('app-explorer').scrollIntoView({ behavior: 'smooth' });
-    
+
     // Wait for scroll to complete, then apply filter
     setTimeout(() => {
         // Set the platform filter
@@ -1050,16 +1050,16 @@ function filterByCategory(category) {
         if (platformFilter) {
             platformFilter.value = category;
         }
-        
+
         // Clear search and other filters
         clearAllFilters();
-        
+
         // Apply the category filter
         applyFilters();
-        
+
         // Show notification
         showNotification(`Showing ${category} apps`);
-        
+
         // Highlight the active filter
         highlightActiveFilter('platform', category);
     }, 500);
@@ -1068,24 +1068,24 @@ function filterByCategory(category) {
 function filterByFeature(feature) {
     // Scroll to app explorer
     document.getElementById('app-explorer').scrollIntoView({ behavior: 'smooth' });
-    
+
     // Wait for scroll to complete, then apply filter
     setTimeout(() => {
         // Clear other filters first
         clearAllFilters();
-        
+
         // Activate the feature tag
         const featureTag = document.querySelector(`[data-feature="${feature}"]`);
         if (featureTag) {
             featureTag.classList.add('active');
         }
-        
+
         // Apply the feature filter
         applyFilters();
-        
+
         // Show notification
         showNotification(`Showing ${formatFeature(feature)} apps`);
-        
+
         // Highlight the active filter
         highlightActiveFilter('feature', feature);
     }, 500);
@@ -1097,18 +1097,18 @@ function clearAllFilters() {
     if (searchInput) {
         searchInput.value = '';
     }
-    
+
     // Reset all select filters
     const platformFilter = document.getElementById('platform-filter');
     const ratingFilter = document.getElementById('rating-filter');
     const priceFilter = document.getElementById('price-filter');
     const sortBy = document.getElementById('sort-by');
-    
+
     if (platformFilter) platformFilter.value = '';
     if (ratingFilter) ratingFilter.value = '';
     if (priceFilter) priceFilter.value = '';
     if (sortBy) sortBy.value = 'featured';
-    
+
     // Clear all feature tags
     const featureTags = document.querySelectorAll('.feature-tag');
     featureTags.forEach(tag => tag.classList.remove('active'));
@@ -1116,10 +1116,10 @@ function clearAllFilters() {
 
 function highlightActiveFilter(type, value) {
     // Add visual feedback for active filters
-    const filterElement = type === 'platform' 
+    const filterElement = type === 'platform'
         ? document.getElementById('platform-filter')
         : document.querySelector(`[data-feature="${value}"]`);
-    
+
     if (filterElement) {
         filterElement.style.animation = 'pulse 0.5s ease-in-out';
         setTimeout(() => {
@@ -1135,7 +1135,7 @@ function handleURLParameters() {
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get('category');
     const feature = urlParams.get('feature');
-    
+
     if (category) {
         setTimeout(() => filterByCategory(category), 1000);
     } else if (feature) {
@@ -1145,10 +1145,10 @@ function handleURLParameters() {
 
 // Enhanced notification function with category/feature context
 function showCategoryNotification(type, value) {
-    const message = type === 'category' 
+    const message = type === 'category'
         ? `Showing ${value.charAt(0).toUpperCase() + value.slice(1)} apps`
         : `Showing ${formatFeature(value)} apps`;
-    
+
     showNotification(message);
 }
 
@@ -1170,32 +1170,32 @@ const mobileMenuStyles = `
             transition: right 0.3s ease;
             z-index: 99;
         }
-        
+
         .nav-links.active {
             right: 0;
         }
-        
+
         .nav-links li {
             margin-bottom: 30px;
         }
-        
+
         .mobile-menu.active span:nth-child(1) {
             transform: rotate(45deg) translate(6px, 6px);
         }
-        
+
         .mobile-menu.active span:nth-child(2) {
             opacity: 0;
         }
-        
+
         .mobile-menu.active span:nth-child(3) {
             transform: rotate(-45deg) translate(6px, -6px);
         }
     }
-    
+
     .dark-theme {
         filter: invert(1) hue-rotate(180deg);
     }
-    
+
     .dark-theme img,
     .dark-theme video,
     .dark-theme iframe {
@@ -1211,7 +1211,7 @@ document.head.appendChild(styleSheet);
 // Performance optimization: Lazy load images
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('img[data-src]');
-    
+
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1222,7 +1222,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     images.forEach(img => imageObserver.observe(img));
 });
 
@@ -1236,3 +1236,4 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
